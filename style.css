@@ -144,17 +144,20 @@ a:focus-visible{outline:3px solid #777;outline-offset:4px}
 }
 
 
-/* PROJECT 1 DELIVERABLE CARD */
+/* =====================================
+   PROJECT DELIVERABLE CARDS
+===================================== */
 
 .project-tag {
   display: inline-block;
   background: #e7f5db;
   color: #355e23;
-  padding: 5px 12px;
+  padding: 6px 13px;
   border-radius: 20px;
   font-size: 0.7rem;
   font-weight: bold;
   letter-spacing: 0.08em;
+  margin-bottom: 12px;
 }
 
 .project-read-link {
@@ -162,13 +165,35 @@ a:focus-visible{outline:3px solid #777;outline-offset:4px}
   margin-top: 18px;
   padding: 12px 20px;
   background: #171717;
-  color: white;
+  color: #ffffff;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.25s;
+  font-size: 0.9rem;
+  transition: background 0.25s ease;
 }
 
 .project-read-link:hover {
   background: #444444;
+}
+
+.deliverable {
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.deliverable:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-read-link,
+  .deliverable {
+    transition: none;
+  }
+
+  .deliverable:hover {
+    transform: none;
+  }
 }
