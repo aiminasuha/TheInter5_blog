@@ -161,14 +161,14 @@
 
         <div class="hopon-content-block">
           <h3>1.1 Introduction to the Problem Space</h3>
-          <p>
-            Public transportation plays an important
-            role in supporting daily mobility.
-            However, passengers may experience
-            difficulties obtaining clear and
-            accessible bus information when
-            planning their journeys.
+          <p>Public buses are an important form of public transportation because they provide an affordable and convenient way for people to travel to different destinations. They are commonly used by students, tourists, working adults and other members of the public who depend on buses for their daily journeys. However, using public buses can sometimes be challenging, especially when passengers do not have access to clear and updated information about bus routes, arrival times and available seats.
           </p>
+          <p>One of the main concerns faced by bus passengers is the uncertainty of waiting for a bus. Passengers may not know the exact location of the bus, how long they need to wait or whether the approaching bus has enough available seats. This can make journey planning difficult, particularly for people who are unfamiliar with the bus routes. For example, tourists may struggle to identify the correct bus to reach their destinations, while school students who are unable to use or carry their phones during school hours may find it difficult to check bus locations and arrival times after school. Similarly, field technicians who travel between different work locations may need reliable bus information to manage their time and daily schedules.
+</p>
+            <p>          Although digital platforms have made public transportation information more accessible, passengers may still face difficulties when they need information directly at the bus stop. This is because not everyone can conveniently access a smartphone or obtain the information they need while waiting.
+</p>
+<p>            Therefore, there is a need for a more accessible and interactive way to provide bus information directly at bus stops. To address this issue, our group proposes HopOn, an interactive bus stop system designed to improve the public transportation experience. Through features such as interactive route selection, GPS-based real-time bus tracking, seat availability monitoring and AI-based estimated arrival times, HopOn aims to help passengers access important travel information more easily and make better travel decisions. By providing these features at the bus stop itself, the system offers an alternative for passengers who cannot conveniently depend on mobile applications.
+</p>
         </div>
 
         <!-- 1.2 EXISTING SYSTEM -->
@@ -176,12 +176,14 @@
         <div class="hopon-content-block">
           <h3>1.2 Existing System</h3>
           <p>
-            Existing bus stop information systems
-            may rely on static route displays,
-            printed schedules, or separate mobile
-            applications to provide journey
-            information.
+            Currently, bus passengers obtain travel information through different methods, such as printed route maps, timetable displays, bus stop signboards and mobile applications. In Malaysia, one example is MyRapid PULSE, an application by Prasarana Malaysia Berhad that provides journey planning and live bus tracking features. These features allow passengers to plan their journeys and monitor bus locations through their smartphones.
           </p>
+          <p>          However, existing systems still have some limitations. According to Khazanah Research Institute (2025), MyRapid PULSE does not provide scheduled arrival times at intermediate bus stops, making it difficult for passengers to know exactly when their bus will arrive. The report also highlighted issues with inaccurate or delayed arrival information, which can cause uncertainty among commuters.
+</p>  
+          <p>          Similarly, a study by Sukor et al. (2021) on young adults’ perceptions of bus services in Penang found that passengers experienced difficulties understanding bus routes, identifying bus destinations and obtaining sufficient information at bus stops. These findings suggest that although digital platforms and existing bus information systems are available, passengers still need clearer and more accessible information while waiting for their buses.
+</p>  
+<p>            Therefore, there is an opportunity to improve the existing bus stop experience by providing important travel information directly through an interactive display, rather than relying entirely on mobile applications.
+</p>
         </div>
 
         <!-- 1.3 THREE PROBLEMS -->
@@ -362,15 +364,25 @@
           <h3>2.2 Description of Proposed System</h3>
           <p>
             HopOn is an interactive touchscreen kiosk at bus stops that is specially designed for the passengers. The system will receive information from GPS devices from each bus and the sensors will send the availability of seats on those specific buses. Therefore, passengers can easily access the information simply from the interactive kiosk.
-                  Passengers can use this system as follow: -
-                        1.	Users touch the kiosk and enter their destination.
-                        2.	System displays the suitable routes and transfer information according to situations. 
-                        3.	Users view the bus route and pick a bus that is available according to the arrival time of the bus and the availability of seats.
-                        4.	Users choose a bus and wait with clear information.
-            HopOn is an easy approach to implement since it is memorable and simple for passengers to use anywhere. Even though there is no guidance, users can still utilise it without any circumstance except for some senior citizens.
-
           </p>
+          <p>            
+            Passengers can use this system as follow: -
+</p>
+           <ol class="hopon-step-list">
+             <li>                        1.	Users touch the kiosk and enter their destination.
+</li>
+             <li>                        2.	System displays the suitable routes and transfer information according to situations. 
+</li>
+             <li>                        3.	Users view the bus route and pick a bus that is available according to the arrival time of the bus and the availability of seats.
+</li>
+             <li>                        4.	Users choose a bus and wait with clear information.
+</li>
+               </ol>
+<p>            HopOn is an easy approach to implement since it is memorable and simple for passengers to use anywhere. Even though there is no guidance, users can still utilise it without any circumstance except for some senior citizens.
+</p>
+
         </div>
+        
 
         <!-- 2.3 FEATURES -->
 
@@ -650,11 +662,15 @@
 
             <span class="hopon-user-number">USER GROUP 1</span>
             <h3>3.1 Tourists</h3>
-            <p>
+            <ul class="hopon-user-list">
+    <li>
               ⋆ HopOn provides a multilingual touchscreen interface that allows tourists to select their preferred language and understand bus information more easily
-              ⋆ Tourists can navigate unfamiliar locations more confidently by accessing clear route guidance and destination information.
-              ⋆ Tourists do not need to download additional public transportation applications that they may only use during a short holiday.
-            </p>
+    </li>
+              <li>              ⋆ Tourists can navigate unfamiliar locations more confidently by accessing clear route guidance and destination information.
+</li>
+              <li>              ⋆ Tourists do not need to download additional public transportation applications that they may only use during a short holiday.
+</li>
+            </ul>
           </article>
 
 
@@ -663,14 +679,18 @@
           <article class="hopon-user-card">
             <span class="hopon-user-number">USER GROUP 2</span>
             <h3>3.2 Students</h3>
-
-            <p>
+            <ul class="hopon-user-list">
+    <li>
               ⋆ HopOn allows students to access bus routes through the HopOn touchscreen panel while following school rules that restrict smartphone usage.
+    </li>
+              <li>             
               ⋆ Students can check the real-time location of buses so that they can estimate bus arrival times and choose suitable buses based on their class schedules
+</li>
+              <li>              
               ⋆ Students can reduce unnecessary waiting time at bus stops by checking the estimated arrival time of their buses.
-            </p>
+</li>
+            </ul>
           </article>
-
 
           <!-- 3.3 BUS ROUTE MANAGERS -->
 
@@ -678,16 +698,20 @@
 
             <span class="hopon-user-number">USER GROUP 3</span>
             <h3>3.3 Public Transport Service Planning Officers</h3>
-
-            <p>
+            <ul class="hopon-user-list">
+    <li>
               ⋆ HopOn helps respond to traffic congestion, road construction or accidents by providing alternative route suggestions to bus drivers while ensuring that required destinations are still reached. 
+    </li>
+              <li>              
               ⋆ HopOn could support more efficient public transportation management by reducing the need for manual monitoring and improving responses to unexpected situations.
+</li>
+              <li>              
               ⋆ Officers can identify unusual stops or delays through GPS monitoring and respond more quickly by arranging backup transportation 
-              ⋆ Officers can use bus location and seat occupancy information to monitor passenger demand and improve bus scheduling.
-            </p>
-
+</li>
+              <li>              ⋆ Officers can use bus location and seat occupancy information to monitor passenger demand and improve bus scheduling.
+</li>
+            </ul>
           </article>
-
         </div>
 
 
