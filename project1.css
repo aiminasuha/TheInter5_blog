@@ -103,12 +103,12 @@ section[id] {
   border: 1px solid #444444;
   border-radius: 22px;
   padding: 40px 28px;
-  min-height: 350px;
+  min-height: 420px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 .hopon-sign {
@@ -170,6 +170,17 @@ section[id] {
   font-size: 0.7rem;
   letter-spacing: 0.15em;
   text-align: center;
+}
+
+/* HOPON PRODUCT IMAGE */
+
+.hopon-product-image {
+  width: 100%;
+  max-width: 280px;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
 }
 
 /* 4. PROJECT INFORMATION STRIP */
