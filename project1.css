@@ -666,11 +666,12 @@ section[id] {
   margin: 25px 0 35px;
 }
 
-.hopon-sdg-number {
-  font-size: 5rem;
-  font-weight: 900;
-  line-height: 1;
-  color: #355e23;
+.hopon-sdg-image {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
 }
 
 .hopon-sdg-banner span {
