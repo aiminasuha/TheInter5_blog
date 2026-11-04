@@ -944,3 +944,14 @@ section[id] {
   color: #65a82e;
   font-weight: bold;
 }
+
+/* SUPPORTING IMAGES */
+
+.hopon-report-image {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+}
