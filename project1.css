@@ -966,3 +966,13 @@ section[id] {
   border-radius: 10px;
   border: 1px solid #dddddd;
 }
+
+/* CENTRE FEATURE CARD #5 */
+
+@media (min-width: 769px) {
+  .hopon-feature-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    width: calc(50% - 10px);
+    justify-self: center;
+  }
+}
