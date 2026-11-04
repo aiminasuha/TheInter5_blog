@@ -990,3 +990,16 @@ section[id] {
   min-width: 35px;
   white-space: nowrap;
 }
+
+/* REFERENCE LINK STYLING */
+
+.hopon-reference-item a {
+  color: #4f8d25;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+
+.hopon-reference-item a:hover {
+  color: #222222;
+}
