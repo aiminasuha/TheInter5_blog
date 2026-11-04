@@ -174,31 +174,159 @@ section[id] {
 
 /* 4. PROJECT INFORMATION STRIP */
 
+/* Main lime-green section */
+
 .hopon-info-strip {
   background: var(--hopon-green);
-  padding: 26px 0;
+  padding: 38px 0;
+  position: relative;
 }
+
+/* Four-column layout */
 
 .hopon-info-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
 }
 
-.hopon-info-grid div {
+/* Individual information cards */
+
+.hopon-info-grid > div {
+  background: #17191b;
+  color: #ffffff;
+  padding: 26px 22px;
+  border-radius: 14px;
+  min-height: 155px;
+
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  justify-content: space-between;
+  gap: 18px;
+
+  position: relative;
+  overflow: hidden;
+
+  border: 1px solid #35383b;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
+
+/* Card number: 01, 02, 03, 04 */
+
+.hopon-info-grid > div::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: 20px;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #777777;
+  letter-spacing: 0.1em;
+}
+
+.hopon-info-grid > div:nth-child(1)::after {
+  content: "01";
+}
+
+.hopon-info-grid > div:nth-child(2)::after {
+  content: "02";
+}
+
+.hopon-info-grid > div:nth-child(3)::after {
+  content: "03";
+}
+
+.hopon-info-grid > div:nth-child(4)::after {
+  content: "04";
+}
+
+/* Small category labels */
 
 .hopon-info-grid small {
-  font-size: 0.65rem;
-  letter-spacing: 0.12em;
-  font-weight: bold;
+  font-family: "Arial", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: var(--hopon-green);
 }
 
+/* Main information text */
+
 .hopon-info-grid strong {
-  font-size: 0.95rem;
+  font-family: "Arial", sans-serif;
+  font-size: clamp(1.1rem, 1.6vw, 1.45rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+/* Decorative green underline */
+
+.hopon-info-grid > div::before {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  left: 22px;
+
+  width: 34px;
+  height: 3px;
+
+  background: var(--hopon-green);
+  border-radius: 5px;
+}
+
+/* Hover animation */
+
+.hopon-info-grid > div:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Tablet layout */
+
+@media (max-width: 900px) {
+  .hopon-info-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile layout */
+
+@media (max-width: 480px) {
+  .hopon-info-strip {
+    padding: 25px 0;
+  }
+
+  .hopon-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hopon-info-grid > div {
+    min-height: 125px;
+    padding: 24px 20px 30px;
+  }
+
+  .hopon-info-grid strong {
+    font-size: 1.3rem;
+  }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .hopon-info-grid > div {
+    transition: none;
+  }
+
+  .hopon-info-grid > div:hover {
+    transform: none;
+  }
 }
 
 /* 5. MAIN REPORT SECTIONS */
@@ -769,10 +897,6 @@ section[id] {
   .hopon-image-grid,
   .hopon-esg-grid {
     grid-template-columns: 1fr;
-  }
-
-  .hopon-info-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .hopon-name-banner {
