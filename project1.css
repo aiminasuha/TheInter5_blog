@@ -939,3 +939,24 @@ section[id] {
   }
 
 }
+
+/* NUMBERED STEPS FOR SECTION 2.2 */
+
+.hopon-step-list {
+  list-style-type: decimal;
+  padding-left: 45px;
+  margin: 20px 0 30px;
+}
+
+.hopon-step-list li {
+  color: #444444;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 12px;
+  padding-left: 8px;
+}
+
+.hopon-step-list li::marker {
+  color: #65a82e;
+  font-weight: bold;
+}
