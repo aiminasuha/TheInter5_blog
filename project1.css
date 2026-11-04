@@ -103,7 +103,7 @@ section[id] {
   border: 1px solid #444444;
   border-radius: 22px;
   padding: 40px 28px;
-  min-height: 420px;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -176,11 +176,12 @@ section[id] {
 
 .hopon-product-image {
   width: 100%;
-  max-width: 280px;
-  height: 220px;
+  max-width: 350px;  /* Increase image width */
+  height: 350px;     /* Increase image height */
   object-fit: contain;
   border-radius: 12px;
   display: block;
+  margin: 0 auto;
 }
 
 /* 4. PROJECT INFORMATION STRIP */
