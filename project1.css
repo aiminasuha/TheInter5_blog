@@ -977,3 +977,16 @@ section[id] {
     justify-self: center;
   }
 }
+
+.hopon-reference-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.hopon-reference-item span {
+  flex-shrink: 0;
+  min-width: 35px;
+  white-space: nowrap;
+}
