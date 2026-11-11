@@ -7,13 +7,14 @@
 /* 1. HOPON COLORS */
 
 :root {
-  --hopon-black: #101114;
-  --hopon-dark: #202329;
+  --hopon-black: #0a111b;
+  --hopon-dark: #172433;
   --hopon-green: #b7f27a;
+  --hopon-cyan: #55dce5;
   --hopon-white: #ffffff;
-  --hopon-light: #f5f6f3;
-  --hopon-border: #dddddd;
-  --hopon-text: #343434;
+  --hopon-light: #f2f7f8;
+  --hopon-border: #d8e3e8;
+  --hopon-text: #343f4b;
 }
 
 body {
