@@ -28,7 +28,17 @@ section[id] {
 /* 2. HERO SECTION */
 
 .hopon-hero {
-  background: var(--hopon-black);
+  background:
+  radial-gradient(
+    circle at 80% 30%,
+    rgba(85, 220, 229, 0.12),
+    transparent 40%
+  ),
+  linear-gradient(
+    135deg,
+    #0a111b,
+    #172433
+  );
   color: white;
   padding: 100px 0;
 }
@@ -112,7 +122,9 @@ section[id] {
   align-items: center;
   gap: 15px;
 
-  box-shadow: 0 0 30px rgba(183, 242, 122, 0.08);
+  box-shadow:
+  0 0 30px rgba(85, 220, 229, 0.08),
+  0 15px 45px rgba(0, 0, 0, 0.25);
 }
 
 .hopon-sign {
@@ -1007,4 +1019,27 @@ section[id] {
 
 .hopon-reference-item a:hover {
   color: #222222;
+}
+
+.hopon-feature-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.hopon-feature-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--hopon-cyan);
+  box-shadow: 0 10px 30px rgba(85, 220, 229, 0.12);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hopon-feature-card {
+    transition: none;
+  }
+
+  .hopon-feature-card:hover {
+    transform: none;
+  }
 }
