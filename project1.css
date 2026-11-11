@@ -1081,12 +1081,26 @@ section[id] {
   margin: 12px 0 0;
 }
 
+
+/* SAME FONT AND COLOUR FOR ALL ESG TEXT */
+
+.hopon-esg-grid p,
 .hopon-esg-grid li {
-  color: #555555;
+  font-family: 'Inter', sans-serif;
   font-size: 0.95rem;
+  font-weight: 400;
+  color: #555555;
   line-height: 1.85;
+}
+
+.hopon-esg-grid li {
   margin-bottom: 12px;
 }
+
+.hopon-esg-grid li::marker {
+  color: #55833b;
+}
+
 
 .hopon-esg-grid li::marker {
   color: #55833b;
