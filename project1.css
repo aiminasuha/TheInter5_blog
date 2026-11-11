@@ -1071,3 +1071,23 @@ section[id] {
   margin-bottom: 20px;
   text-align: justify;
 }
+
+
+/* ESG BULLET POINT STYLING */
+
+.hopon-esg-grid ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 12px 0 0;
+}
+
+.hopon-esg-grid li {
+  color: #555555;
+  font-size: 0.95rem;
+  line-height: 1.85;
+  margin-bottom: 12px;
+}
+
+.hopon-esg-grid li::marker {
+  color: #55833b;
+}
