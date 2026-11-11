@@ -1043,3 +1043,19 @@ section[id] {
     transform: none;
   }
 }
+
+/* PARAGRAPH FONT */
+
+.hopon-section p,
+.hopon-section li,
+.hopon-section td,
+.hopon-section figcaption {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.85;
+}
+
+.hopon-content-block > p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
