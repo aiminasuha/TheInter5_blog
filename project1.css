@@ -995,18 +995,30 @@ section[id] {
   }
 }
 
+
+/* REFERENCE NUMBERING AND ALIGNMENT */
+
 .hopon-reference-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 45px minmax(0, 1fr);
+  align-items: start;
+  gap: 15px;
   padding: 20px;
 }
 
-.hopon-reference-item span {
-  flex-shrink: 0;
-  min-width: 35px;
+.hopon-reference-item > span {
+  font-weight: 700;
+  color: #777777;
   white-space: nowrap;
 }
+
+.hopon-reference-item p {
+  margin: 0;
+  min-width: 0;
+  color: #555555;
+  overflow-wrap: anywhere;
+}
+
 
 /* REFERENCE LINK STYLING */
 
